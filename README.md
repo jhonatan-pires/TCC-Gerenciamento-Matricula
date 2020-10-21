@@ -5,4 +5,5 @@ project
 ## EM ANDAMENTO.
 
 <hr>
-Trabalho UNIP - APS
+
+Aplicação feita para o trabalho semestral APS do curso de Ciências da Computação na UNIP (4º Semestre)
