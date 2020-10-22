@@ -56,7 +56,7 @@ public class Curso {
         CodInstituto = CodInstituto;
     }
 
-    List ListaCursos = new ArrayList(){
+    List ListaCursos = new ArrayList();
         ListaCursos.add ("Administração de Empresas");
         ListaCursos.add ("BioMedicina");
         ListaCursos.add ("Ciências Biológicas");
@@ -66,7 +66,7 @@ public class Curso {
         ListaCursos.add ("Farmacologia");
         ListaCursos.add ("Rede de Computadores");
         ListaCursos.add ("Sistemas de Informações");
-    }
+    
 
 
 }
