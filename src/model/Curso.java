@@ -17,7 +17,7 @@ public class Curso {
         this.TipoCurso = TipoCurso;
         this.CargaHoraria = CargaHoraria;
         this.CodInstituto = CodInstituto;
-        ListaCursos = new ArrayList();
+        ArrayList ListaCursos = new ArrayList();
 
     }
 
@@ -56,6 +56,17 @@ public class Curso {
         CodInstituto = CodInstituto;
     }
 
- 
+    List ListaCursos = new ArrayList(){
+        ListaCursos.add ("Administração de Empresas");
+        ListaCursos.add ("Bio Medicina");
+        ListaCursos.add ("Ciências Biológicas");
+        ListaCursos.add ("Ciências da Computação");
+        ListaCursos.add ("Direito");
+        ListaCursos.add ("Educação Física");
+        ListaCursos.add ("Farmacologia");
+        ListaCursos.add ("Rede de Computadores");
+        ListaCursos.add ("Sistemas de Informações");
+    }
+
 
 }
