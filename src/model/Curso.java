@@ -58,7 +58,7 @@ public class Curso {
 
     List ListaCursos = new ArrayList(){
         ListaCursos.add ("Administração de Empresas");
-        ListaCursos.add ("Bio Medicina");
+        ListaCursos.add ("BioMedicina");
         ListaCursos.add ("Ciências Biológicas");
         ListaCursos.add ("Ciências da Computação");
         ListaCursos.add ("Direito");
