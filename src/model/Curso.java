@@ -11,12 +11,12 @@ public class Curso {
     
 
 
-    public Curso (int CodCurso, String NomeCurso, String TipoCurso, float CargaHoraria, int CodInstituto){
-        this.CodCurso = CodCurso;
-        this.NomeCurso = NomeCurso;
-        this.TipoCurso = TipoCurso;
-        this.CargaHoraria = CargaHoraria;
-        this.CodInstituto = CodInstituto;
+    public Curso (int codCurso, String nomeCurso, String tipoCurso, float cargaHoraria, int codInstituto){
+        this.CodCurso = codCurso;
+        this.NomeCurso = nomeCurso;
+        this.TipoCurso = tipoCurso;
+        this.CargaHoraria = cargaHoraria;
+        this.CodInstituto = codInstituto;
         
 
     }
@@ -24,36 +24,36 @@ public class Curso {
     public int getCodCurso(){
         return CodCurso;
     }
-    public void CodCurso (int CodCurso){
-        CodCurso = CodCurso;
+    public void CodCurso (int codCurso){
+        CodCurso = codCurso;
     }
 
     public String getNomeCurso(){
         return NomeCurso;
     }
-    public void NomeCurso (String NomeCurso){
-        NomeCurso = NomeCurso;
+    public void NomeCurso (String nomeCurso){
+        NomeCurso = nomeCurso;
     }
 
     public String getTipoCurso(){
         return TipoCurso;
     }
-    public void TipoCurso (String TipoCurso){
-        TipoCurso = TipoCurso;
+    public void TipoCurso (String tipoCurso){
+        TipoCurso = tipoCurso;
     }
 
     public float getCargaHoraria(){
         return CargaHoraria;
     }
-    public void CargaHoraria (float CargaHoraria){
-        CargaHoraria = CargaHoraria;
+    public void CargaHoraria (float cargaHoraria){
+        CargaHoraria = cargaHoraria;
     }
 
     public int getCodInstituto(){
         return CodInstituto;
     }
-    public void CodInstituto (int CodInstituto){
-        CodInstituto = CodInstituto;
+    public void CodInstituto (int codInstituto){
+        CodInstituto = codInstituto;
     }
 
 
