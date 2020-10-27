@@ -1,6 +1,6 @@
 package model;
 
-import java.util.ArrayList;
+import java.util;
 
 public class Curso {
     protected int CodCurso;
@@ -8,7 +8,7 @@ public class Curso {
     protected String TipoCurso;
     protected float CargaHoraria;
     protected int CodInstituto;
-    ArrayList<Curso> ListaCursos;
+    
 
 
     public Curso (int CodCurso, String NomeCurso, String TipoCurso, float CargaHoraria, int CodInstituto){
@@ -17,7 +17,7 @@ public class Curso {
         this.TipoCurso = TipoCurso;
         this.CargaHoraria = CargaHoraria;
         this.CodInstituto = CodInstituto;
-        ArrayList ListaCursos = new ArrayList();
+        
 
     }
 
@@ -56,17 +56,6 @@ public class Curso {
         CodInstituto = CodInstituto;
     }
 
-    List ListaCursos = new ArrayList();
-        ListaCursos.add ("Administração de Empresas");
-        ListaCursos.add ("BioMedicina");
-        ListaCursos.add ("Ciências Biológicas");
-        ListaCursos.add ("Ciências da Computação");
-        ListaCursos.add ("Direito");
-        ListaCursos.add ("Educação Física");
-        ListaCursos.add ("Farmacologia");
-        ListaCursos.add ("Rede de Computadores");
-        ListaCursos.add ("Sistemas de Informações");
-    
 
 
 }
