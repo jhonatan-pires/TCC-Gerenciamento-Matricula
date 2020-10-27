@@ -1,6 +1,8 @@
 package model;
 
-import java.util.Date;;
+import java.util.Date;
+
+import sun.jvm.hotspot.utilities.IntArray;;
 
 public class Professor {
     protected int IdentProf;
@@ -10,43 +12,43 @@ public class Professor {
     protected String EspecProf;
 
 
-    public Professor (int IdentProf, double EndProf, String NomeProf, Date DataNasc, String EspecProf){
-        this.IdentProf = IdentProf;
-        this.EndProf = EndProf;
-        this.NomeProf = NomeProf;
-        this.DataNasc = DataNasc;
-        this.EspecProf = EspecProf;
+    public Professor (int identProf, double endProf, String nomeProf, Date dataNasc, String especProf){
+        this.IdentProf = identProf;
+        this.EndProf = endProf;
+        this.NomeProf = nomeProf;
+        this.DataNasc = dataNasc;
+        this.EspecProf = especProf;
     }
 
     public int getIdentProf(){
         return IdentProf;
     }
-    public void setIdentProf(String IdentProf){
-        IdentProf = IdentProf;
+    public void setIdentProf(int identProf){
+        IdentProf = identProf;
     }
     public double getEndProf(){
         return EndProf;
     }
-    public void setEndProf (double EndProf){
-        EndProf = EndProf;
+    public void setEndProf (double endProf){
+        EndProf = endProf;
     }
     public String getNomeProf(){
         return NomeProf;
     }
-    public void setNomeProf(String NomeProf){
-        NomeProf = NomeProf;
+    public void setNomeProf(String nomeProf){
+        NomeProf = nomeProf;
     } 
     public Date getDataNasc(){
         return DataNasc;
     }
-    public void setDataNasc(Date DataNasc){
-        DataNasc = DataNasc;
+    public void setDataNasc(Date dataNasc){
+        DataNasc = dataNasc;
     }
     public String getEspecProf(){
         return EspecProf;
     }
-    public void setEspecProf(String EspecProf){
-        EspecProf = EspecProf;
+    public void setEspecProf(String especProf){
+        EspecProf = especProf;
     }
 
 
