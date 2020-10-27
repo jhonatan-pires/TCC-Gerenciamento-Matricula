@@ -3,11 +3,11 @@ package model;
 import java.util;
 
 public class Curso {
-    protected int CodCurso;
-    protected String NomeCurso;
-    protected String TipoCurso;
-    protected float CargaHoraria;
-    protected int CodInstituto;
+    public int CodCurso;
+    public String NomeCurso;
+    public Sring TipoCurso;
+    public float CargaHoraria;
+    public int CodInstituto;
     
 
 
