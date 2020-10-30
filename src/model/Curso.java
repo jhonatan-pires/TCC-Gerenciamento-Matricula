@@ -1,11 +1,9 @@
 package model;
 
-import java.util;
-
 public class Curso {
     public int CodCurso;
     public String NomeCurso;
-    public Sring TipoCurso;
+    public String TipoCurso;
     public float CargaHoraria;
     public int CodInstituto;
     
