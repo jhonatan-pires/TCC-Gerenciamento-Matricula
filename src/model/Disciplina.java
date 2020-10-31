@@ -1,45 +1,48 @@
 package model;
 
 public class Disciplina {
-    public int CodDisc;
+
+    public String CodDisc;
     public String NomeDisc;
-    public float CargaHoraria;
-    public String AulasSemana;
+    public Float CargaHoraria;
+    public double AulasSemana;
 
-
-    public Disciplina (int codDisc, String nomeDisc, float cargaHoraria, String aulasSemana){
-        this.CodDisc = codDisc;
-        this.NomeDisc = nomeDisc;
-        this.CargaHoraria = cargaHoraria;
-        this.AulasSemana = aulasSemana;
-    }
-
-    public int getCodDisc(){
-        return CodDisc;
-    }
-    public void setCodDisc(int codDisc){
+    public Disciplina (String codDisc, String nomeDisc, Float cargaHoraria, double aulasSemana) {
         CodDisc = codDisc;
-    }
-    public String getNomeDisc(){
-        return NomeDisc;
-    }
-    public void setNomeDisc(String nomeDisc){
         NomeDisc = nomeDisc;
-    }
-    public float getCargHoraria(){
-        return CargaHoraria;
-    }
-    public void setCargaHoraria(float cargaHoraria){
         CargaHoraria = cargaHoraria;
-    }
-    public String getAulasSemana(){
-        return AulasSemana;
-    }
-    public void setAulasSemana(String aulasSemana){
         AulasSemana = aulasSemana;
     }
 
+    public String getCodDisc () {
+        return CodDisc;
+    }
+
+    public void setCodDisc (String codDisc) {
+        CodDisc = codDisc;
+    }
+
+    public String getNomeDisc () {
+        return NomeDisc;
+    }
+
+    public void setNomeDisc (String nomeDisc) {
+        NomeDisc = nomeDisc;
+    }
+
+    public Float getCargaHoraria () {
+        return CargaHoraria;
+    }
+
+    public void setCargaHoraria (Float cargaHoraria) {
+        CargaHoraria = cargaHoraria;
+    }
+
+    public double getAulasSemana () {
+        return AulasSemana;
+    }
+
+    public void setAulasSemana (double aulasSemana) {
+        AulasSemana = aulasSemana;
+    }
 }
-
-
-
