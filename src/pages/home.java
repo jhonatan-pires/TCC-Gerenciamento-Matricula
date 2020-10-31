@@ -258,14 +258,23 @@ public class home extends javax.swing.JFrame {
 
     private void showDisciplineMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showDisciplineMouseClicked
         // TODO add your handling code here:
+        showDisciplines mostrarDisciplinas = new showDisciplines();
+        mostrarDisciplinas.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showDisciplineMouseClicked
 
     private void showStudentMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showStudentMouseClicked
         // TODO add your handling code here:
+        showStudents mostrarAlunos = new showStudents();
+        mostrarAlunos.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showStudentMouseClicked
 
     private void showTeacherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showTeacherMouseClicked
         // TODO add your handling code here:
+        showTeachers mostrarProfessores = new showTeachers();
+        mostrarProfessores.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showTeacherMouseClicked
 
     private void showCPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showCPMouseClicked
