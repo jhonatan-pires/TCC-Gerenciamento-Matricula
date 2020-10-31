@@ -32,7 +32,7 @@ public class showCourse extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tableCourses = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         backBtn = new javax.swing.JMenu();
         exitBtn = new javax.swing.JMenu();
@@ -73,7 +73,7 @@ public class showCourse extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tableCourses.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null},
                 {null},
@@ -95,7 +95,7 @@ public class showCourse extends javax.swing.JFrame {
                 "Cursos"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tableCourses);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -213,6 +213,6 @@ public class showCourse extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tableCourses;
     // End of variables declaration//GEN-END:variables
 }
