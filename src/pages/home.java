@@ -244,6 +244,9 @@ public class home extends javax.swing.JFrame {
 
     private void registerTeacherBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerTeacherBtnMouseClicked
         // TODO add your handling code here:
+        registerTeacher regTeacher = new registerTeacher();
+        regTeacher.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_registerTeacherBtnMouseClicked
 
     private void showCourseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showCourseMouseClicked
