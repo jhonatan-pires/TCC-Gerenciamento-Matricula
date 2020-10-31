@@ -94,7 +94,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="CodCurso" min="-2" pref="140" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="NomeCurso" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="192" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -135,26 +135,30 @@
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="CodCurso" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="NomeCurso" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="Bacharel" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                      <Component id="CargaHoraria" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="gestao" min="-2" pref="30" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="others" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="CodCurso" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="Bacharel" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="CargaHoraria" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="gestao" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="others" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                  <Component id="CodInstituto" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                          <Component id="CodInstituto" min="-2" pref="30" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="87" max="32767" attributes="0"/>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
                   <Component id="saveCourseBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -237,27 +241,6 @@
             <Property name="text" type="java.lang.String" value="Nome do Curso"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="NomeCurso">
-          <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="10">
-                <StringItem index="0" value=" Administra&#xe7;&#xe3;o de Empresas"/>
-                <StringItem index="1" value="BioMedicina"/>
-                <StringItem index="2" value="Ci&#xea;ncias Biol&#xf3;gicas"/>
-                <StringItem index="3" value="Ciencias da Computa&#xe7;&#xe3;o"/>
-                <StringItem index="4" value="Direito"/>
-                <StringItem index="5" value="Educa&#xe7;&#xe3;o F&#xed;sica"/>
-                <StringItem index="6" value="Farmacologia"/>
-                <StringItem index="7" value="Rede de Computadores"/>
-                <StringItem index="8" value="Sistemas de Informa&#xe7;&#xf5;es"/>
-                <StringItem index="9" value="Outros"/>
-              </StringArray>
-            </Property>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-          </AuxValues>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tipo de Curso"/>
@@ -318,6 +301,36 @@
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
         </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JList" name="NomeCurso">
+              <Properties>
+                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                  <StringArray count="10">
+                    <StringItem index="0" value="Administra&#xe7;&#xe3;o de Empresas"/>
+                    <StringItem index="1" value="BioMedicina"/>
+                    <StringItem index="2" value="Ci&#xea;ncias Biol&#xf3;gicas"/>
+                    <StringItem index="3" value="Ciencias da Computa&#xe7;&#xe3;o"/>
+                    <StringItem index="4" value="Direito"/>
+                    <StringItem index="5" value="Educa&#xe7;&#xe3;o F&#xed;sica"/>
+                    <StringItem index="6" value="Farmacologia"/>
+                    <StringItem index="7" value="Rede de Computadores"/>
+                    <StringItem index="8" value="Sistemas de Informa&#xe7;&#xf5;es"/>
+                    <StringItem index="9" value="Outros"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

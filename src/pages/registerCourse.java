@@ -35,7 +35,6 @@ public class registerCourse extends javax.swing.JFrame {
         CodCurso = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        NomeCurso = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
         Bacharel = new javax.swing.JRadioButton();
         gestao = new javax.swing.JRadioButton();
@@ -45,6 +44,8 @@ public class registerCourse extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         CodInstituto = new javax.swing.JTextField();
         saveCourseBtn = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        NomeCurso = new javax.swing.JList<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         backBtn = new javax.swing.JMenu();
         exitBtn = new javax.swing.JMenu();
@@ -91,8 +92,6 @@ public class registerCourse extends javax.swing.JFrame {
 
         jLabel4.setText("Nome do Curso");
 
-        NomeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { " Administração de Empresas", "BioMedicina", "Ciências Biológicas", "Ciencias da Computação", "Direito", "Educação Física", "Farmacologia", "Rede de Computadores", "Sistemas de Informações", "Outros" }));
-
         jLabel5.setText("Tipo de Curso");
 
         tipoCourse.add(Bacharel);
@@ -116,6 +115,13 @@ public class registerCourse extends javax.swing.JFrame {
         saveCourseBtn.setForeground(new java.awt.Color(255, 255, 255));
         saveCourseBtn.setText("Salvar");
 
+        NomeCurso.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Administração de Empresas", "BioMedicina", "Ciências Biológicas", "Ciencias da Computação", "Direito", "Educação Física", "Farmacologia", "Rede de Computadores", "Sistemas de Informações", "Outros" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(NomeCurso);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -131,7 +137,7 @@ public class registerCourse extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(CodCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(NomeCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
@@ -163,22 +169,24 @@ public class registerCourse extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addGap(2, 2, 2)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CodCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NomeCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Bacharel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CargaHoraria, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(gestao, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(others, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(2, 2, 2)
-                        .addComponent(CodInstituto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CodCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Bacharel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CargaHoraria, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(gestao, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(others, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addGap(2, 2, 2)
+                                .addComponent(CodInstituto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(saveCourseBtn)
                 .addContainerGap())
         );
@@ -273,7 +281,7 @@ public class registerCourse extends javax.swing.JFrame {
     private javax.swing.JTextField CargaHoraria;
     private javax.swing.JTextField CodCurso;
     private javax.swing.JTextField CodInstituto;
-    private javax.swing.JComboBox<String> NomeCurso;
+    private javax.swing.JList<String> NomeCurso;
     private javax.swing.JMenu backBtn;
     private javax.swing.JMenu exitBtn;
     private javax.swing.JRadioButton gestao;
@@ -287,6 +295,7 @@ public class registerCourse extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton others;
     private javax.swing.JButton saveCourseBtn;
     private javax.swing.ButtonGroup tipoCourse;
