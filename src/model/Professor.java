@@ -2,7 +2,6 @@ package model;
 
 import java.util.Date;
 
-import sun.jvm.hotspot.utilities.IntArray;;
 
 public class Professor {
     protected int IdentProf;
