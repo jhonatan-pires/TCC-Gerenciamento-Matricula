@@ -230,6 +230,9 @@ public class home extends javax.swing.JFrame {
 
     private void registerDisciplineBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerDisciplineBtnMouseClicked
         // TODO add your handling code here:
+        registerDiscipline regDiscipline = new registerDiscipline();
+        regDiscipline.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_registerDisciplineBtnMouseClicked
 
     private void registerStudentBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registerStudentBtnMouseClicked
