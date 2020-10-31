@@ -279,18 +279,30 @@ public class home extends javax.swing.JFrame {
 
     private void showCPMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showCPMouseClicked
         // TODO add your handling code here:
+        showCP mostrarCP = new showCP();
+        mostrarCP.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showCPMouseClicked
 
     private void showCDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showCDMouseClicked
         // TODO add your handling code here:
+        showCD mostrarCP = new showCD();
+        mostrarCP.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showCDMouseClicked
 
     private void showPDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showPDMouseClicked
         // TODO add your handling code here:
+        showPD mostrarPD = new showPD();
+        mostrarPD.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showPDMouseClicked
 
     private void showADMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showADMouseClicked
         // TODO add your handling code here:
+        showAD mostrarAD = new showAD();
+        mostrarAD.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showADMouseClicked
 
     public static void main(String args[]) {
