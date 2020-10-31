@@ -251,6 +251,9 @@ public class home extends javax.swing.JFrame {
 
     private void showCourseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showCourseMouseClicked
         // TODO add your handling code here:
+        showCourse mostrarCursos = new showCourse();
+        mostrarCursos.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_showCourseMouseClicked
 
     private void showDisciplineMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_showDisciplineMouseClicked
