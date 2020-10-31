@@ -12,121 +12,16 @@
         </Property>
       </Properties>
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="jMenu1">
+        <Menu class="javax.swing.JMenu" name="backBtn">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ee" green="ee" red="ee" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="CADASTRAR"/>
+            <Property name="text" type="java.lang.String" value="VOLTAR"/>
           </Properties>
-          <SubComponents>
-            <Menu class="javax.swing.JMenu" name="registerCourseBtn">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Curso"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="registerCourseBtnMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="registerDisciplineBtn">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Disciplina"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="registerDisciplineBtnMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="registerStudentBtn">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Aluno"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="registerStudentBtnMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="registerTeacherBtn">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Professor"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="registerTeacherBtnMouseClicked"/>
-              </Events>
-            </Menu>
-          </SubComponents>
-        </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
-          <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ee" green="ee" red="ee" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="MOSTRAR"/>
-          </Properties>
-          <SubComponents>
-            <Menu class="javax.swing.JMenu" name="showCourse">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Curso"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showCourseMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showDiscipline">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Disciplina"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showDisciplineMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showStudent">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Aluno"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showStudentMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showTeacher">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Professor"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showTeacherMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showCP">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Cursos/Professores"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showCPMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showCD">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Cursos/Disciplinas"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showCDMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showPD">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Professores/Disciplinas"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showPDMouseClicked"/>
-              </Events>
-            </Menu>
-            <Menu class="javax.swing.JMenu" name="showAD">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Aluno/Disciplina"/>
-              </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="showADMouseClicked"/>
-              </Events>
-            </Menu>
-          </SubComponents>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="backBtnMouseClicked"/>
+          </Events>
         </Menu>
         <Menu class="javax.swing.JMenu" name="exitBtn">
           <Properties>
@@ -212,13 +107,13 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="343" max="32767" attributes="0"/>
+                      <EmptySpace pref="508" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -243,7 +138,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Seja bem vindo ao EducaMais"/>
+                <Property name="text" type="java.lang.String" value="Registrar Curso"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
@@ -254,7 +149,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="O melhor sistema de ensino"/>
+                <Property name="text" type="java.lang.String" value="Registre seu curso abaixo"/>
               </Properties>
             </Component>
           </SubComponents>
