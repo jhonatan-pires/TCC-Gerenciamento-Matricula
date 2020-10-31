@@ -38,7 +38,7 @@ public class registerTeacher extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         EndProf = new javax.swing.JTextField();
-        saveStudantBtn = new javax.swing.JButton();
+        saveTeacherBtn = new javax.swing.JButton();
         NomeProf = new javax.swing.JTextField();
         DataNasc = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
@@ -103,9 +103,9 @@ public class registerTeacher extends javax.swing.JFrame {
 
         EndProf.setToolTipText("");
 
-        saveStudantBtn.setBackground(new java.awt.Color(0, 153, 255));
-        saveStudantBtn.setForeground(new java.awt.Color(255, 255, 255));
-        saveStudantBtn.setText("Salvar");
+        saveTeacherBtn.setBackground(new java.awt.Color(0, 153, 255));
+        saveTeacherBtn.setForeground(new java.awt.Color(255, 255, 255));
+        saveTeacherBtn.setText("Salvar");
 
         NomeProf.setToolTipText("");
 
@@ -185,7 +185,7 @@ public class registerTeacher extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(saveStudantBtn)
+                        .addComponent(saveTeacherBtn)
                         .addGap(12, 12, 12))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,7 +231,7 @@ public class registerTeacher extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(mestrado)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(saveStudantBtn))
+                        .addComponent(saveTeacherBtn))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(infor)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -365,7 +365,7 @@ public class registerTeacher extends javax.swing.JFrame {
     private javax.swing.JRadioButton mat;
     private javax.swing.JCheckBox mestrado;
     private javax.swing.JRadioButton othersEspecialist;
-    private javax.swing.JButton saveStudantBtn;
+    private javax.swing.JButton saveTeacherBtn;
     private javax.swing.ButtonGroup titulo;
     // End of variables declaration//GEN-END:variables
 }
