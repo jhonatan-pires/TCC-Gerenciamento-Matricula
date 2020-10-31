@@ -2,7 +2,6 @@ package model;
 
 import java.util.Date;
 
-
 public class Professor {
     protected int IdentProf;
     protected double EndProf;
